@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Save Mart App</string>
+    <string name="fruits_and_vegetables">Fruits and Vegetables</string>
+    <string name="staples_and_essentials">Staples and Essentials</string>
+    <string name="diary_and_akery">Diary and akery</string>
+    <string name="snacks_and_branded_foods">Snacks and Branded Foods</string>
+    <string name="beverages">Beverages</string>
+    <string name="homecare">Homecare</string>
+    <string name="bestseller">Bestseller</string>
+    <string name="home">Home</string>
+    <string name="mycart">MyCart</string>
+    <string name="myprofile">MyProfile</string>
+    <string name="notification">Notification</string>
+    <string name="logout">Logout</string>
+    <string name="diary_and_bakery">Diary and Bakery</string>
+    <string name="change_password">Change Password</string>
+</resources>

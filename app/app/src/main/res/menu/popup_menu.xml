@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item android:id="@+id/fi"
+            app:showAsAction="never"
+            android:icon="@drawable/baseline_search_blue"
+            android:title="Find Item"/>
+        <item android:id="@+id/qrc"
+            app:showAsAction="never"
+            android:icon="@drawable/baseline_qr_code_scanner_blue"
+            android:title="Scan and Go"/>
+
+</menu>

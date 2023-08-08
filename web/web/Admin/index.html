@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Encode and Decode</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/qrcode.js"></script>
+  </head>
+  <body>
+    <table border="1" align="center">
+      <tr>
+        <td>Product</td>
+        <td><input type="text" id="txt_name" /></td>
+      </tr>
+      <tr>
+        <td>Rack Number</td>
+        <td><input type="tel" id="txt_contact" /></td>
+      </tr>
+     
+      <tr>
+        <td colspan="2" align="center">
+          <button id="btn_generate" onclick="genarate()">Generate</button>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <div id="code" align="center">
+     
+    </div>
+      
+    <script>
+      function genarate() {
+        var name = document.getElementById("txt_name").value;
+        var contact = document.getElementById("txt_contact").value;
+     
+
+        var array =
+          '{ "Product" : "' +
+          name +
+          '" , "Rack Number" : "' +
+          contact +
+        
+          '" }';
+        console.log(array);
+        var after = JSON.parse(array);
+        console.log(after);
+        console.log(after.name);
+
+        var qrcode = new QRCode(document.getElementById("code"), {
+          text: array,
+          width: 128,
+          height: 128,
+          colorDark: "#5868bf",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.H,
+        });
+      }
+    </script>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <!--To Read QR Code-->
+    <script type="text/javascript" src="js/qrReader.js"></script>
+  </body>
+</html>
